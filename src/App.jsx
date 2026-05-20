@@ -165,19 +165,19 @@ const css = {
     gap: 10,
     fontWeight: 800,
     fontSize: "1.1rem",
-    color: "#1D4ED8",
+    color: "#3ecadc",
     letterSpacing: "-0.3px",
   },
   navLogoIcon: {
     width: 34, height: 34,
-    background: "linear-gradient(135deg, #3B82F6, #1D4ED8)",
+    background: "linear-gradient(135deg, #3ecadc, #3ecadc)",
     borderRadius: 10,
     display: "flex", alignItems: "center", justifyContent: "center",
     fontSize: 17,
   },
   navBadge: {
     background: "#DBEAFE",
-    color: "#1D4ED8",
+    color: "#3ecadc",
     fontSize: 12,
     fontWeight: 600,
     padding: "4px 12px",
@@ -237,7 +237,7 @@ function RecipeCard({ recipe, onSelect }) {
         </div>
         <span style={{
           background: "#EFF6FF",
-          color: "#1D4ED8",
+          color: "#3ecadc",
           border: "1px solid #BFDBFE",
           fontSize: 12, fontWeight: 600,
           padding: "4px 12px", borderRadius: 100,
@@ -268,7 +268,7 @@ function RecipeCard({ recipe, onSelect }) {
         <button
           onClick={(e) => { e.stopPropagation(); onSelect(recipe.id); }}
           style={{
-            background: "#2563EB",
+            background: "#3ecadc",
             color: "#fff",
             border: "none",
             borderRadius: 10,
@@ -331,9 +331,9 @@ function IngredientChecklist({ recipe }) {
         >
           <div style={{
             width: 20, height: 20,
-            border: checked[ing] ? "2px solid #2563EB" : "2px solid #CBD5E1",
+            border: checked[ing] ? "2px solid #3ecadc" : "2px solid #CBD5E1",
             borderRadius: "50%",
-            background: checked[ing] ? "#2563EB" : "transparent",
+            background: checked[ing] ? "#3ecadc" : "transparent",
             display: "flex", alignItems: "center", justifyContent: "center",
             flexShrink: 0, transition: "all 0.15s",
           }}>
@@ -392,13 +392,13 @@ function RecipeTimer({ defaultMinutes, label }) {
     padding: "9px 8px", borderRadius: 10,
     border: "1.5px solid #BFDBFE", background: "#fff",
     fontFamily: "inherit", fontSize: 13, fontWeight: 600,
-    cursor: "pointer", color: "#1D4ED8",
+    cursor: "pointer", color: "#3ecadc",
     display: "flex", alignItems: "center", justifyContent: "center", gap: 5,
     transition: "background 0.15s",
   };
   const btnPrimary = {
     ...btnBase,
-    background: "#2563EB", borderColor: "#2563EB", color: "#fff",
+    background: "#3ecadc", borderColor: "#3ecadc", color: "#fff",
     boxShadow: "0 2px 8px rgba(37,99,235,0.3)",
   };
 
@@ -424,7 +424,7 @@ function RecipeTimer({ defaultMinutes, label }) {
       <div style={{
         textAlign: "center",
         fontSize: "3rem", fontWeight: 800, letterSpacing: 2,
-        color: done ? "#93C5FD" : "#1D4ED8",
+        color: done ? "#93C5FD" : "#3ecadc",
         background: "#EFF6FF", border: "1.5px solid #BFDBFE",
         borderRadius: 14, padding: "0.5rem 1rem", marginBottom: "0.75rem",
       }}>
@@ -480,7 +480,7 @@ function RecipePage({ recipe, onBack }) {
 
         {/* Hero header */}
         <div style={{
-          background: "linear-gradient(135deg, #2563EB, #1E3A8A)",
+          background: "linear-gradient(135deg, #3ecadc, #3ecadc)",
           borderRadius: 22, padding: "2rem 2.5rem",
           color: "#fff", marginBottom: "1.5rem",
           boxShadow: "0 8px 32px rgba(37,99,235,0.25)",
@@ -534,7 +534,7 @@ function RecipePage({ recipe, onBack }) {
                 background: "#F8FAFC",
               }}>
                 <span style={{
-                  width: 32, height: 32, background: "#2563EB", color: "#fff",
+                  width: 32, height: 32, background: "#3ecadc", color: "#fff",
                   borderRadius: "50%", display: "flex", alignItems: "center",
                   justifyContent: "center", fontWeight: 700, fontSize: 14, flexShrink: 0,
                 }}>
@@ -546,7 +546,7 @@ function RecipePage({ recipe, onBack }) {
                 {step.minutes > 0 ? (
                   <span style={{
                     display: "inline-flex", alignItems: "center", gap: 4,
-                    background: "#DBEAFE", color: "#1E40AF",
+                    background: "#DBEAFE", color: "#3ecadc",
                     fontSize: 12, fontWeight: 700,
                     padding: "4px 10px", borderRadius: 100,
                     flexShrink: 0, marginTop: 4,
@@ -594,14 +594,14 @@ function HomePage({ onSelect }) {
         <div>
           <h1 style={{ fontWeight: 800, fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.15, color: "#0F172A", marginBottom: "0.75rem" }}>
             Cook every egg recipe{" "}
-            <span style={{ color: "#2563EB" }}>with Hà Huy</span>
+            <span style={{ color: "#3ecadc" }}>with Hà Huy</span>
           </h1>
           <p style={{ fontSize: "1.05rem", color: "#475569", lineHeight: 1.7, maxWidth: 480 }}>
             Pick a recipe, check off your ingredients, follow the steps, and use the built-in timer — all in one place. Hà Huy iu Khánh Vân
           </p>
         </div>
         <div style={{
-          background: "linear-gradient(135deg, #2563EB, #1E3A8A)",
+          background: "linear-gradient(135deg, #3ecadc, #3ecadc)",
           borderRadius: 22, padding: "1.75rem", color: "#fff",
           boxShadow: "0 8px 32px rgba(37,99,235,0.25)",
         }}>
@@ -649,7 +649,7 @@ function HomePage({ onSelect }) {
                 padding: "6px 16px", borderRadius: 10, border: "none",
                 fontFamily: "inherit", fontSize: 14, fontWeight: 500,
                 cursor: "pointer", transition: "all 0.18s",
-                background: category === cat ? "#2563EB" : "transparent",
+                background: category === cat ? "#3ecadc" : "transparent",
                 color: category === cat ? "#fff" : "#475569",
                 boxShadow: category === cat ? "0 2px 8px rgba(37,99,235,0.3)" : "none",
               }}
